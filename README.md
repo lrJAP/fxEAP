@@ -6,7 +6,8 @@
 
 基于lrEAP模式化开发的演示系统。
 
-<video src="https://user-images.githubusercontent.com/53809996/170219798-7310c07e-b04d-47b7-8349-c896a20c3367.mp4">
+<video src="https://user-images.githubusercontent.com/53809996/170219798-7310c07e-b04d-47b7-8349-c896a20c3367.mp4"></video>
+
 ## lrEAP JavaFX开发手册
 
 [lrEAP JavaFX开发手册](doc/javafx/README.md)，本文档描述lrEAP对JavaFX组件的扩展与增加。
