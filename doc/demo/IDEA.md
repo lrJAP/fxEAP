@@ -1,5 +1,7 @@
 # lrEAP演示环境IDEA初始化
 
+[返回](../../README.md)
+
  ## JavaFX SDK安装
 
 [JvaFX SDI](JavaFX_Env.md)
@@ -23,3 +25,7 @@ File -> Project Strucute
 ## 编译设置
 
 ![IDEA](compiler01.png)
+
+
+
+[返回](../../README.md)

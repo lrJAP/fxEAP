@@ -6,9 +6,8 @@
 
 基于lrEAP模式化开发的演示系统。
 
-<video id="video" controls="" preload="none">
-    <source id="mp4" src="doc/video/01.mp4" type="video/mp4">
-</video>
+https://user-images.githubusercontent.com/53809996/170219798-7310c07e-b04d-47b7-8349-c896a20c3367.mp4
+
 
 ## 平台简述
 
@@ -90,6 +89,10 @@ lrEAP平台框架在逻辑上可以分为三个层次：
 ### 下载代码到本地
 
 [lrEAP GitHub](https://github.com/lrJAP/EAP)
+
+```java
+git clone https://github.com/lrJAP/fxEAP.git
+```
 
 ### 创建并初始化数据库
 
@@ -255,7 +258,7 @@ TODO
 
 - 下载[lrEAP演示环境的WebClient客户端](TODO)
 
-- 配置[JavaFX SDK环境]((doc/demo/JavaFX_Env.md))
+- 配置[JavaFX SDK环境](doc/demo/JavaFX_Env.md)
 
 - 修改JVM参数
 
@@ -288,19 +291,9 @@ TODO
 | [元数据设计](doc/metadata/README.md)                       | 基于PowerDesigner，生成单一实体、树型结构的元数据信息，包括实体信息、实体属性信息、查询条件相关的前后端代码。<br />元数据是lrEAP中最基础的公共数据，是后续聚合对象设计、多对多对象设计、单据及功能菜单开发的基础。 |
 | [聚合对象设计](doc/aggregation/README.md)                  | 基于元数据，设计并生成聚合对象的相关信息。支持一主一子、一主多子、多主、多主多子等复杂结构。并生成相应的前后端代码。 |
 | [多对多对象设计](doc/many2many/README.md)                  | 基于元数据，设计并生成多对多对象的相关信息。多对多结构中，最关键的是对照表。 |
-| [资源国际化](doc/bill/README.md)                           | 对java源代码时的中文进行国际化处理。                         |
+| [资源国际化](doc/i18n/README.md)                           | 对java源代码时的中文进行国际化处理。                         |
 | [单据定义](doc/bill/README.md)                             | 基于元数据（包括聚合、多对多），生成界面单据信息。           |
 | [功能定义](doc/function/README.md)                         | 基于单据定义，生成功能信息。                                 |
 | [菜单定义](doc/menu/README.md)                             | 基于功能定义，生成菜单信息。一个功能可以生成多个菜单。       |
 
-## 模块列表
-| <span style="display:inline-block;width:260px">模块名称</span> | 描述                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [eap-maven-dependencies](eap-maven-dependencies/README.md)   | 独立模块，用于声明 eap 平台中所有的模块，供外部类库引用。    |
-| [eap-maven-parent](eap-maven-parent/README.md)               | 用于声明、管理eap平台引用的所有第三方类库，以及除eap-maven-dependencies之外所有的平台模块。 |
-| [eap-web-client](eap-web-client/README.md)                   | 用于JavaFX客户端与后端服务器通讯（下载前端代码、实现前后端交互等）。 |
-| [eap-platform](eap-platform/README.md)                       | eap平台基础模块，提供ValueObject、FX ValueObject、Reference参照系统、JavaFX扩展、BusinessObject体系等。 |
-| [eap-system-manager](eap-system-manager/README.md)           | 系统管理、元数据管理相关的功能。                             |
-| [eap-applications](eap-applications/README.md)               | 应用平台。包括通用功能、消息管理、批处理、工作流、知识管理等模块。 |
-| [eap-tools](eap-tools/README.md)                             | 应用级工具。如导入导出等模块。                               |
-| [eap-webapp](eap-webapp/README.md)                           | Web演示模块。                                                |
+## 

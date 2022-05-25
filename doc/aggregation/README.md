@@ -1,5 +1,7 @@
 # AggregationDesigner聚合对象设计
 
+[返回](../../README.md)
+
 ## 简述
 
 使用单一VO就能够满足的业务功能相对来说是比较简单的，在整个企业应用系统中往往占比较小。大多数情况下，我们的业务领域映射到Java对象时，都具有较复杂的结构，如主子表、一主多子表，甚至是多主多子表等。
@@ -1736,3 +1738,6 @@ public class BillDefineAggregationClientConfig {
 }
 ```
 
+
+
+[返回](../../README.md)

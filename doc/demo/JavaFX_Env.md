@@ -1,5 +1,7 @@
 # lrEAP JavaFX环境配置
 
+[返回](../../README.md)
+
 ## JavaFX官网
 
 [JavaFX官网](https://openjfx.io/)
@@ -23,3 +25,7 @@
 ## 其它配置
 
 可以不设置系统变量，待在IDEA导入项目时，在IDEA中进行JavaFX SDK相关的配置。
+
+
+
+[返回](../../README.md)

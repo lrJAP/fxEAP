@@ -1,5 +1,7 @@
 # EnumDesigner枚举定义
 
+[返回](../../README.md)
+
 ## 简述
 
 软件开发过程中，通常使用枚举类型来管理一组稳定的、有限的常量值，例如各种数据状态、单据状态、账户状态等信息。
@@ -329,3 +331,5 @@ public class KnowledgeBaseTypeEnumJsonDeserializer extends AbstractEnumJsonDeser
     ```
 
     
+
+[返回](../../README.md)

@@ -1,5 +1,7 @@
 # lrEAP演示环境数据库初始化
 
+[返回](../../README.md)
+
 ## 通过DUMP文件恢复
 
 ### oracle 12c dump
@@ -22,3 +24,7 @@ impdp lreap/xxx@orclpdb directory=ORA_DUMP_DIR dumpfile=lrEAP_xxxx.xx.xx.DMP sch
 - 需要修改dmp文件所在的dump dir
 - 修改dumpfile文件名
 - dump中的schema名称为lreap，如果需要导入到其它schma，需要使用remap_schema参数
+
+
+
+[返回](../../README.md)
