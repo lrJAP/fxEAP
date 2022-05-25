@@ -281,20 +281,20 @@ TODO
 
 ## lrEAP模式化开发主要功能描述
 
-| <span style="display:inline-block;width:35%">功能</span> | 描述                                                         |
-| -------------------------------------------------------- | ------------------------------------------------------------ |
-| [枚举设计](doc/enum/README.md)                           | 基于ini文件生成自定义枚举信息，包括枚举类、json序列化/反序列化类、MyBatis Handler类，以及国际化资源信息。 |
-| [参照设计](doc/reference/README.md)                      | 基于PowerDesigner或元数据，生成参照信息，包括前、后端相关代码及资源。 |
-| [元数据设计](doc/metadata/README.md)                     | 基于PowerDesigner，生成单一实体、树型结构的元数据信息，包括实体信息、实体属性信息、查询条件相关的前后端代码。<br />元数据是lrEAP中最基础的公共数据，是后续聚合对象设计、多对多对象设计、单据及功能菜单开发的基础。 |
-| [聚合对象设计](doc/aggregation/README.md)                | 基于元数据，设计并生成聚合对象的相关信息。支持一主一子、一主多子、多主、多主多子等复杂结构。并生成相应的前后端代码。 |
-| [多对多对象设计](doc/many2many/README.md)                | 基于元数据，设计并生成多对多对象的相关信息。多对多结构中，最关键的是对照表。 |
-| [资源国际化](doc/bill/README.md)                         | 对java源代码时的中文进行国际化处理。                         |
-| [单据定义](doc/bill/README.md)                           | 基于元数据（包括聚合、多对多），生成界面单据信息。           |
-| [功能定义](doc/function/README.md)                       | 基于单据定义，生成功能信息。                                 |
-| [菜单定义](doc/menu/README.md)                           | 基于功能定义，生成菜单信息。一个功能可以生成多个菜单。       |
+| <span style="display:inline-block;width:120px">功能</span> | 描述                                                         |
+| ---------------------------------------------------------- | ------------------------------------------------------------ |
+| [枚举设计](doc/enum/README.md)                             | 基于ini文件生成自定义枚举信息，包括枚举类、json序列化/反序列化类、MyBatis Handler类，以及国际化资源信息。 |
+| [参照设计](doc/reference/README.md)                        | 基于PowerDesigner或元数据，生成参照信息，包括前、后端相关代码及资源。 |
+| [元数据设计](doc/metadata/README.md)                       | 基于PowerDesigner，生成单一实体、树型结构的元数据信息，包括实体信息、实体属性信息、查询条件相关的前后端代码。<br />元数据是lrEAP中最基础的公共数据，是后续聚合对象设计、多对多对象设计、单据及功能菜单开发的基础。 |
+| [聚合对象设计](doc/aggregation/README.md)                  | 基于元数据，设计并生成聚合对象的相关信息。支持一主一子、一主多子、多主、多主多子等复杂结构。并生成相应的前后端代码。 |
+| [多对多对象设计](doc/many2many/README.md)                  | 基于元数据，设计并生成多对多对象的相关信息。多对多结构中，最关键的是对照表。 |
+| [资源国际化](doc/bill/README.md)                           | 对java源代码时的中文进行国际化处理。                         |
+| [单据定义](doc/bill/README.md)                             | 基于元数据（包括聚合、多对多），生成界面单据信息。           |
+| [功能定义](doc/function/README.md)                         | 基于单据定义，生成功能信息。                                 |
+| [菜单定义](doc/menu/README.md)                             | 基于功能定义，生成菜单信息。一个功能可以生成多个菜单。       |
 
 ## 模块列表
-| <span style="display:inline-block;width:35%">模块名称</span> | 描述                                                         |
+| <span style="display:inline-block;width:150px">模块名称</span> | 描述                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [eap-maven-dependencies](eap-maven-dependencies/README.md)   | 独立模块，用于声明 eap 平台中所有的模块，供外部类库引用。    |
 | [eap-maven-parent](eap-maven-parent/README.md)               | 用于声明、管理eap平台引用的所有第三方类库，以及除eap-maven-dependencies之外所有的平台模块。 |
