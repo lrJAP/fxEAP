@@ -26,15 +26,15 @@
 
 ![FunctionDesigner](function04.png)
 
-## 保存单据定义
+### 保存单据定义
 
 ![FunctionDesigner](function05.png)
 
-## 生成菜单信息
+### 生成菜单信息
 
 ![FunctionDesigner](function06.png)
 
-## 查看生成菜单信息产生的资源信息
+### 查看生成菜单信息产生的资源信息
 
 ![FunctionDesigner](menu01.png)
 

@@ -62,7 +62,7 @@ lrEAP的界面模式，在JavaFX提供的基础组件之上，进行封装、增
 
 ### 前端模块（eap-system-manager-client）
 
-## UserSessionUIConfig
+#### UserSessionUIConfig
 
 ```java
 /**
@@ -254,7 +254,7 @@ public class UserSessionUIConfig {
 }
 ```
 
-## UserSessionAppModel
+#### UserSessionAppModel
 
 ```java
 /**
@@ -319,7 +319,7 @@ public class UserSessionAppModel extends TableFormAppModel {
 }
 ```
 
-## UserSessionUI
+#### UserSessionUI
 
 ```java
 /**
