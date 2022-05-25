@@ -171,9 +171,9 @@ IEnumTypeUtils工具类提供基于IEnumType的以下方法：
 
 ### 生成枚举信息
 
-- 查看并复制生成的内容，以其中一个枚举类，说明生成的资源
+查看并复制生成的内容，以其中一个枚举类，说明生成的资源
 
-  - KnowledgeBaseTypeEnum
+#### KnowledgeBaseTypeEnum
 
 ```java
 /**
@@ -233,7 +233,7 @@ public enum KnowledgeBaseTypeEnum implements IEnumType {
 }
 ```
 
-  - KnowledgeBaseTypeEnumJsonDeserializer
+#### KnowledgeBaseTypeEnumJsonDeserializer
 
 ```java
 /**
@@ -263,73 +263,73 @@ public class KnowledgeBaseTypeEnumJsonDeserializer extends AbstractEnumJsonDeser
 
 ```
 
-- MyBatis Handler
+#### MyBatis Handler
 
-  ```java
-  /**
-   * <p>Title: LiRong Java Enterprise Application Platform</p>
-   * <p>应用系统 - 知识库</p>
-   * <p>Description: KnowledgeBaseTypeEnum(知识库类型) 枚举的MyBatis Handler类 </p>
-   * <p>CorpRights: lrJAP.com</p>
-   * <p>Company: lrJAP.com</p>
-   *
-   * @author jianjun.yu
-   * @version 3.0.0-SNAPSHOT
-   * @date 2022-05-17
-   * @since 1.0.0-SNAPSHOT
-   */
-  public class KnowledgeBaseTypeEnumHandler extends LRBaseTypeHandler<KnowledgeBaseTypeEnum> {
-  
-      @Override
-      public Class<KnowledgeBaseTypeEnum> getEnumTypeClass() {
-  
-          return KnowledgeBaseTypeEnum.class;
-      }
-  
-      /******************************************************************************************************************/
-      /********************************************** lrEAP Code Generator **********************************************/
-      /******************************************************************************************************************/
-  }
+```java
+/**
+ * <p>Title: LiRong Java Enterprise Application Platform</p>
+ * <p>应用系统 - 知识库</p>
+ * <p>Description: KnowledgeBaseTypeEnum(知识库类型) 枚举的MyBatis Handler类 </p>
+ * <p>CorpRights: lrJAP.com</p>
+ * <p>Company: lrJAP.com</p>
+ *
+ * @author jianjun.yu
+ * @version 3.0.0-SNAPSHOT
+ * @date 2022-05-17
+ * @since 1.0.0-SNAPSHOT
+ */
+public class KnowledgeBaseTypeEnumHandler extends LRBaseTypeHandler<KnowledgeBaseTypeEnum> {
+
+    @Override
+    public Class<KnowledgeBaseTypeEnum> getEnumTypeClass() {
+
+        return KnowledgeBaseTypeEnum.class;
+    }
+
+    /******************************************************************************************************************/
+    /********************************************** lrEAP Code Generator **********************************************/
+    /******************************************************************************************************************/
+}
+```
+
+
+
+#### 国际化资源
+
+- KnowledgeBaseTypeEnum_en_US.properties
+
+  ```ini
+  KnowledgeBaseTypeEnum.CompanyPublic=CompanyPublic
+  KnowledgeBaseTypeEnum.DepartmentPrivate=DepartmentPrivate
+  KnowledgeBaseTypeEnum.DepartmentPublic=DepartmentPublic
+  KnowledgeBaseTypeEnum.SemiPublic=SemiPublic
+  KnowledgeBaseTypeEnum.PersonalPrivate=PersonalPrivate
   ```
+
   
+
+- KnowledgeBaseTypeEnum_zh_CN.properties
+
+  ```ini
+  KnowledgeBaseTypeEnum.CompanyPublic=公司公共
+  KnowledgeBaseTypeEnum.DepartmentPrivate=部门私有
+  KnowledgeBaseTypeEnum.DepartmentPublic=部门公共
+  KnowledgeBaseTypeEnum.SemiPublic=半公开
+  KnowledgeBaseTypeEnum.PersonalPrivate=个人私有
+  ```
+
   
+
+- KnowledgeBaseTypeEnum_zh_TW.properties
+
+  ```ini
+  KnowledgeBaseTypeEnum.CompanyPublic=公司公共
+  KnowledgeBaseTypeEnum.DepartmentPrivate=部門私有
+  KnowledgeBaseTypeEnum.DepartmentPublic=部門公共
+  KnowledgeBaseTypeEnum.SemiPublic=半公開
+  KnowledgeBaseTypeEnum.PersonalPrivate=個人私有
+  ```
+
   
-- 国际化资源
-
-  - KnowledgeBaseTypeEnum_en_US.properties
-
-    ```ini
-    KnowledgeBaseTypeEnum.CompanyPublic=CompanyPublic
-    KnowledgeBaseTypeEnum.DepartmentPrivate=DepartmentPrivate
-    KnowledgeBaseTypeEnum.DepartmentPublic=DepartmentPublic
-    KnowledgeBaseTypeEnum.SemiPublic=SemiPublic
-    KnowledgeBaseTypeEnum.PersonalPrivate=PersonalPrivate
-    ```
-
-    
-
-  - KnowledgeBaseTypeEnum_zh_CN.properties
-
-    ```ini
-    KnowledgeBaseTypeEnum.CompanyPublic=公司公共
-    KnowledgeBaseTypeEnum.DepartmentPrivate=部门私有
-    KnowledgeBaseTypeEnum.DepartmentPublic=部门公共
-    KnowledgeBaseTypeEnum.SemiPublic=半公开
-    KnowledgeBaseTypeEnum.PersonalPrivate=个人私有
-    ```
-
-    
-
-  - KnowledgeBaseTypeEnum_zh_TW.properties
-
-    ```ini
-    KnowledgeBaseTypeEnum.CompanyPublic=公司公共
-    KnowledgeBaseTypeEnum.DepartmentPrivate=部門私有
-    KnowledgeBaseTypeEnum.DepartmentPublic=部門公共
-    KnowledgeBaseTypeEnum.SemiPublic=半公開
-    KnowledgeBaseTypeEnum.PersonalPrivate=個人私有
-    ```
-
-    
 
 [返回](../../README.md)

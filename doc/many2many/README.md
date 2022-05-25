@@ -54,7 +54,7 @@
 
 ### 公共模块（eap-knowledge-base-public）
 
-## KnowledgeBaseManyToManyVO
+#### KnowledgeBaseManyToManyVO
 
 ```java
 /**
@@ -122,7 +122,7 @@ public class KnowledgeBaseManyToManyVO extends KnowledgeBaseVO implements IBaseM
 }
 ```
 
-## IKnowledgeBaseManyToMany
+#### IKnowledgeBaseManyToMany
 
 ```java
 /**
@@ -150,7 +150,7 @@ public interface IKnowledgeBaseManyToMany<T extends KnowledgeBaseManyToManyVO, S
 
 ### 业务处理模块（eap-knowledge-base-private）
 
-## KnowledgeBaseManyToManyBO
+#### KnowledgeBaseManyToManyBO
 
 ```java
 /**
@@ -243,7 +243,7 @@ public class KnowledgeBaseManyToManyBO
 }
 ```
 
-## IKnowledgeBaseManyToManyMapper
+#### IKnowledgeBaseManyToManyMapper
 
 ```java
 /**
@@ -275,7 +275,7 @@ public interface IKnowledgeBaseManyToManyMapper extends IManyToManyModelService 
 }
 ```
 
-## IKnowledgeBaseManyToManyMapper
+#### IKnowledgeBaseManyToManyMapper
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -665,7 +665,7 @@ limit #{pageBeginIndex}, #{pageEndIndex}
 </mapper>
 ```
 
-## KnowledgeBaseManyToManyHttpInvokerServiceConfig
+#### KnowledgeBaseManyToManyHttpInvokerServiceConfig
 
 ```java
 /**
@@ -699,7 +699,7 @@ public class KnowledgeBaseManyToManyHttpInvokerServiceConfig {
 
 ### 前端模块（eap-knowledge-base-client）
 
-## KnowledgeBaseManyToManyFXVO
+#### KnowledgeBaseManyToManyFXVO
 
 ```java
 /**
@@ -824,7 +824,7 @@ public class KnowledgeBaseManyToManyFXVO extends KnowledgeBaseFXVO implements IB
 }
 ```
 
-## KnowledgeUserSelectionPaneConfig
+#### KnowledgeUserSelectionPaneConfig
 
 ```java
 /**
@@ -861,7 +861,7 @@ public class KnowledgeUserSelectionPaneConfig {
 }
 ```
 
-## KnowledgeBaseSelectionPaneConfig
+#### KnowledgeBaseSelectionPaneConfig
 
 ```java
 /**
@@ -898,7 +898,7 @@ public class KnowledgeBaseSelectionPaneConfig {
 }
 ```
 
-## KnowledgeBaseManyToManyClientConfig
+#### KnowledgeBaseManyToManyClientConfig
 
 ```java
 /**
@@ -927,7 +927,7 @@ public class KnowledgeBaseManyToManyClientConfig {
 }
 ```
 
-## KnowledgeBaseSelectionPane
+#### KnowledgeBaseSelectionPane
 
 ```java
 /**
@@ -968,7 +968,7 @@ public class KnowledgeBaseSelectionPane extends AbstractPaginationSelectionPane 
 }
 ```
 
-## KnowledgeUserSelectionPane
+#### KnowledgeUserSelectionPane
 
 ```java
 /**

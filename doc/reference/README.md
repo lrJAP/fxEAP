@@ -64,7 +64,7 @@ ReferenceDesigner支持通过PowerDesigner和元数据生成参照信息。在�
 
 ### 公共模块（eap-knowledge-base-public）
 
-## KnowledgeInfoReferenceVO
+#### KnowledgeInfoReferenceVO
 
 ```java
 /**
@@ -104,7 +104,7 @@ public class KnowledgeInfoReferenceVO extends ReferenceDataVO {
 }
 ```
 
-## IKnowledgeInfoReferenceModelService
+#### IKnowledgeInfoReferenceModelService
 
 ```java
 /**
@@ -140,7 +140,7 @@ public interface IKnowledgeInfoReferenceModelService<T extends KnowledgeInfoRefe
 }
 ```
 
-## KnowledgeInfoReferenceModelService
+#### KnowledgeInfoReferenceModelService
 
 ```java
 /**
@@ -197,7 +197,7 @@ public class KnowledgeInfoReferenceModelService implements IKnowledgeInfoReferen
 
 ### 业务处理模块（eap-knowledge-base-private）
 
-## IKnowledgeInfoReferenceMapper
+#### IKnowledgeInfoReferenceMapper
 
 ```java
 /**
@@ -230,7 +230,7 @@ public interface IKnowledgeInfoReferenceMapper extends IBaseReferenceModelServic
 }
 ```
 
-## IKnowledgeInfoReferenceMapper
+#### IKnowledgeInfoReferenceMapper
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -354,7 +354,7 @@ limit #{pageBeginIndex}, #{pageEndIndex}
 
 ### 前端模块（eap-knowledge-base-client）
 
-## KnowledgeInfoReferenceAppModel
+#### KnowledgeInfoReferenceAppModel
 
 ```java
 /**
@@ -396,7 +396,7 @@ public class KnowledgeInfoReferenceAppModel<T extends KnowledgeInfoReferenceVO> 
 }
 ```
 
-## KnowledgeInfoReferenceClientConfig
+#### KnowledgeInfoReferenceClientConfig
 
 ```java
 /**
@@ -436,7 +436,7 @@ public class KnowledgeInfoReferenceClientConfig {
 }
 ```
 
-## KnowledgeInfoReferencePane
+#### KnowledgeInfoReferencePane
 
 ```java
 /**

@@ -187,7 +187,7 @@ lrEAP平台中，不允许使用复合主键。复合主键必须改为唯一索
 
 ### 公共模块（eap-knowledge-base-public）
 
-## KnowledgeTypeVO
+#### KnowledgeTypeVO
 
 ```java
 /**
@@ -591,7 +591,7 @@ public class KnowledgeTypeVO extends BasicVO implements ITreeTableVO {
 }
 ```
 
-## IKnowledgeType
+#### IKnowledgeType
 
 ```java
 /**
@@ -618,7 +618,7 @@ public interface IKnowledgeType<P extends KnowledgeTypeVO> extends IBusinessTree
 }
 ```
 
-## 字段国示化信息
+#### 字段国示化信息
 
 - KnowledgeType_en_US
 
@@ -680,7 +680,7 @@ lastModifyTime=最後修改時間
 ts=時間戳
 ```
 
-## 属性校验信息
+#### 属性校验信息
 
 - KnowledgeTypeVO_en_US
 
@@ -735,7 +735,7 @@ APP.KNOWLEDGE.KnowledgeTypeVO.Ts.MaxLength=時間戳(ts) 超過最大長度，�
 
 ### 业务处理模块（eap-knowledge-base-private）
 
-## KnowledgeTypeBO
+#### KnowledgeTypeBO
 
 ```java
 /**
@@ -921,7 +921,7 @@ public class KnowledgeTypeBO<P extends KnowledgeTypeVO> extends BasicBusinessObj
 }
 ```
 
-## IKnowledgeTypeMapper
+#### IKnowledgeTypeMapper
 
 ```java
 /**
@@ -947,7 +947,7 @@ public interface IKnowledgeTypeMapper<P extends KnowledgeTypeVO> extends IBaseTr
 }
 ```
 
-## IKnowledgeTypeMapper
+#### IKnowledgeTypeMapper
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -1301,7 +1301,7 @@ left join sm_user pk_last_modify on pk_last_modify.pk_user = t.pk_last_modify
 </mapper>
 ```
 
-## KnowledgeTypeHttpInvokerServiceConfig
+#### KnowledgeTypeHttpInvokerServiceConfig
 
 ```java
 /**
@@ -1336,7 +1336,7 @@ public class KnowledgeTypeHttpInvokerServiceConfig {
 
 ### 前端模块（eap-knowledge-base-client）
 
-## KnowledgeTypeFXVO
+#### KnowledgeTypeFXVO
 
 ```java
 /**
@@ -1800,7 +1800,7 @@ public class KnowledgeTypeFXVO extends BasicFXVO implements ITreeTableFXVO {
 }
 ```
 
-## KnowledgeTypeClientConfig
+#### KnowledgeTypeClientConfig
 
 ```java
 /**
