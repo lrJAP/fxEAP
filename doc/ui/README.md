@@ -1,10 +1,10 @@
-# lrEAP模式化开发
+# fxEAP模式化开发
 
 [返回](../../README.md)
 
 ## 简述
 
-lrEAP的界面模式，在JavaFX提供的基础组件之上，进行封装、增强、优化，针对我们在界面层面需要解决的问题，提供完整的UI模式。
+fxEAP的界面模式，在JavaFX提供的基础组件之上，进行封装、增强、优化，针对我们在界面层面需要解决的问题，提供完整的UI模式。
 
 常见的UI功能界面，主要有以下几个部分构成：
 
@@ -22,7 +22,7 @@ lrEAP的界面模式，在JavaFX提供的基础组件之上，进行封装、增
 
 ![BillDesigner](mvc01.png)
 
-lrEAP基于JavaFX的UI框架，参照了MVC模式进行设计。
+fxEAP基于JavaFX的UI框架，参照了MVC模式进行设计。
 
 Control层的主要体现，是一系列的Action，每一个Action，代表一个业务动作，在界面上以按钮的形式进行展现。
 
@@ -64,7 +64,7 @@ AppModel在整个UI体系中，占有非常重要的地位，它处于幕后，�
 
 ![BillDesigner](mvc03.png)
 
-lrEAP中的MVC模型之间的通讯，以AppModel为总线，派发、接收各类事件。Model、View、Action既是事件的产生者，又是事件是消费者，只是在产生、消费的事件类型上各有不同。所有的View、Action均需要作为事件接收者，在AppModel中进行注册，并在View、Action对监听的事件进行响应。也就是有如下约定：一个组件向AppModel声明需要监听事件的话，则应在其自身的代码中，响应该事件。
+fxEAP中的MVC模型之间的通讯，以AppModel为总线，派发、接收各类事件。Model、View、Action既是事件的产生者，又是事件是消费者，只是在产生、消费的事件类型上各有不同。所有的View、Action均需要作为事件接收者，在AppModel中进行注册，并在View、Action对监听的事件进行响应。也就是有如下约定：一个组件向AppModel声明需要监听事件的话，则应在其自身的代码中，响应该事件。
 
 1. 在通讯层面上，每个Action均将触发一个或多个事件，同时接收特定的事件。例如AddAction，将触发数据新增事件，经由AppModel，派发给所有组件；同时AddAction接收界面状态事件，只有界面在非编辑状态时，AddAction才是有效的。
 

@@ -1,14 +1,14 @@
-# lrEAP JavaFX开发手册
+# fxEAP JavaFX开发手册
 
 [返回](../../README.md)
 
 ## 简述
 
-> 在以往企业级应用的开发过程中，我们曾经在UI端广泛地使用了Applet+Swing技术，基本上没有使用过JS。所以在最初构思建设lrEAP的时候，本着充分发挥以往经验的想法，我们计划把Applet+Swing技术作为lrEAP主要的前端展现技术之一。我们也尝试过使用ExtJS等基于JS的前台框架，在使用基于JS进行UI设计及编码的过程中，我们依旧认为Applet+Swing在界面展现方式、响应速度、充分运用客户端资源从而降低服务器压力、使用Java原生技术及第三方类库方面有相当的优势，但是在开发模式以及对开发人员要求等方面，与目前主流的JS前端框架有着较大的差异。
+> 在以往企业级应用的开发过程中，我们曾经在UI端广泛地使用了Applet+Swing技术，基本上没有使用过JS。所以在最初构思建设fxEAP的时候，本着充分发挥以往经验的想法，我们计划把Applet+Swing技术作为fxEAP主要的前端展现技术之一。我们也尝试过使用ExtJS等基于JS的前台框架，在使用基于JS进行UI设计及编码的过程中，我们依旧认为Applet+Swing在界面展现方式、响应速度、充分运用客户端资源从而降低服务器压力、使用Java原生技术及第三方类库方面有相当的优势，但是在开发模式以及对开发人员要求等方面，与目前主流的JS前端框架有着较大的差异。
 >
-> 为实现UI端开发便捷、充分利用我们的历史经验的目的，我们折中选择了JavaFX作为lrEAP平台首先实现的UI框架。以验证我们对企业级模式化开发平台的思想。
+> 为实现UI端开发便捷、充分利用我们的历史经验的目的，我们折中选择了JavaFX作为fxEAP平台首先实现的UI框架。以验证我们对企业级模式化开发平台的思想。
 
-本文档主要介绍基于lrEAP提供的模式化开发思想和工具，进行企业级应用的基础开发知识、技能以及最佳实践。在开始阅读本文档之前，我们希望您已经具备以下基本开发技能：
+本文档主要介绍基于fxEAP提供的模式化开发思想和工具，进行企业级应用的基础开发知识、技能以及最佳实践。在开始阅读本文档之前，我们希望您已经具备以下基本开发技能：
 
 1)	能够安装JDK/JRE，并基本了解其功能及作用；
 2)	能够安装Maven，并基本了解其作用及使用方法；
@@ -22,12 +22,12 @@
 通过阅读本文档，我们希望您能够了解以下内容并达成如下目标：
 
 1)	关于JavaFX的基本介绍以及基础编码技能。
-2)	lrEAP中，基于JavaFX的整体前端UI技术架构。重点是基于元数据的界面建模、各类单据模板、界面装配方式等；
-3)	lrEAP中，JavaFX客户端与中间件服务器的交互方式。重点是在服务端配置Remoting Service(Spring HTTP Invoker)以及如何在UI中调用远程服务；
-4)	lrEAP中，JavaFX项目群组的结构、代码管理机制以及相关注意事项，重点是了解lrEAP项目群组的分级原则，各级子项目的作用，子项目中各Module的分类原则、作用以及限制；
-5)	lrEAP中，前后台编码基本技能以及注意事项。lrEAP的UI前端运行在独立的JRE中，并且会把各个子项目生成的client、public对应的jar包下载到客户端本地，private由于含有业务处理逻辑，将禁止下载到客户端本地。所以在基于lrEAP进行开发的过程，要时刻关注：与业务逻辑处理相关的代码或是比较敏感的代码，只允许存放在子项目的private模块中，lrEAP将不允许客户端下载private子模板中的代码，以免造成安全等方面的问题。也就是说，client、public子模块将允许下载到客户端，其中只允许存放与界面显示、通用工具、基础框架相关的代码。
-6)	lrEAP中，通过Maven打包、发布、部署项目。lrEAP使用Maven管理与项目群组jar包引入、编译、安装、发布等相关的工作。我们可以在了解lrEAP项目群组设置原则的基础上，手工建立相关的项目群组，也可以通过lrEAP提供的基于Eclipse插件体系的可视化开发工具lrEAP Modeling完成相关工作。
-7)	能够尝试使用lrEAP快速开发一个或多个中等复杂程度的业务功能，并逐步形成使用lrEAP开发完成功能模块、产品的能力。这是本文档的主要目标；
+2)	fxEAP中，基于JavaFX的整体前端UI技术架构。重点是基于元数据的界面建模、各类单据模板、界面装配方式等；
+3)	fxEAP中，JavaFX客户端与中间件服务器的交互方式。重点是在服务端配置Remoting Service(Spring HTTP Invoker)以及如何在UI中调用远程服务；
+4)	fxEAP中，JavaFX项目群组的结构、代码管理机制以及相关注意事项，重点是了解fxEAP项目群组的分级原则，各级子项目的作用，子项目中各Module的分类原则、作用以及限制；
+5)	fxEAP中，前后台编码基本技能以及注意事项。fxEAP的UI前端运行在独立的JRE中，并且会把各个子项目生成的client、public对应的jar包下载到客户端本地，private由于含有业务处理逻辑，将禁止下载到客户端本地。所以在基于fxEAP进行开发的过程，要时刻关注：与业务逻辑处理相关的代码或是比较敏感的代码，只允许存放在子项目的private模块中，fxEAP将不允许客户端下载private子模板中的代码，以免造成安全等方面的问题。也就是说，client、public子模块将允许下载到客户端，其中只允许存放与界面显示、通用工具、基础框架相关的代码。
+6)	fxEAP中，通过Maven打包、发布、部署项目。fxEAP使用Maven管理与项目群组jar包引入、编译、安装、发布等相关的工作。我们可以在了解fxEAP项目群组设置原则的基础上，手工建立相关的项目群组，也可以通过fxEAP提供的基于Eclipse插件体系的可视化开发工具fxEAP Modeling完成相关工作。
+7)	能够尝试使用fxEAP快速开发一个或多个中等复杂程度的业务功能，并逐步形成使用fxEAP开发完成功能模块、产品的能力。这是本文档的主要目标；
 
 
 
@@ -42,12 +42,12 @@
 | [J1005.JavaFX属性和绑定——复杂对象](J1005.md)                 |
 | [J1020.JavaFX控件和布局](J1020.md)                           |
 | [J2001.JavaFX事件机制](J2001.md)                             |
-| [JavaFX组件扩展（一）——IntegerField、DecimalField和CurrencyField](J3001.MD) |
-| [JavaFX组件扩展（二）——StringField](J3002.md)                |
-| [JavaFX组件扩展（三）——EnumComboBox](J3003.md)               |
-| [JavaFX组件扩展（四）——ReferenceField](J3004.md)             |
-| [扩展JavaFX GridPane—FormView](J3010.md)                     |
-| [扩展JavaFX TableView—BillTableView](J3011.md)               |
+| [J3001.JavaFX组件扩展（一）——IntegerField、DecimalField和CurrencyField](J3001.MD) |
+| [J3002JavaFX组件扩展（二）——StringField](J3002.md)           |
+| [J3003JavaFX组件扩展（三）——EnumComboBox](J3003.md)          |
+| [J3004JavaFX组件扩展（四）——ReferenceField](J3004.md)        |
+| [J3010.扩展JavaFX GridPane—FormView](J3010.md)               |
+| [J3011.扩展JavaFX TableView—BillTableView](J3011.md)         |
 
 
 

@@ -1,4 +1,4 @@
-# lrEAP演示环境IDEA初始化
+# fxEAP演示环境IDEA初始化
 
 [返回](../../README.md)
 

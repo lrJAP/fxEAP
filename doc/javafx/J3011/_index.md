@@ -402,5 +402,5 @@ public final class DataUtils {
 
 ## 运行效果
 
-<video controls src="J3011/01.mp4" poster="" autoplay>
+<video controls src="01.mp4" poster="" autoplay>
 </video>

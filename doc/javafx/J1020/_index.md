@@ -22,8 +22,8 @@ javafx.scene.layout.GridPane
 
 使用了HBox、VBox
 
-![JavaFX](J1020/hbox01.png)
+![JavaFX](hbox01.png)
 
 ### FormView
 
-![JavaFX](J1020/formview01.png)
+![JavaFX](formview01.png)

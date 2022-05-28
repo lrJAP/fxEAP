@@ -108,5 +108,5 @@ public class HelloFormView extends Application {
 
 ## 运行效果
 
-<video controls src="J3010/01.mp4" poster="" autoplay>
+<video controls src="01.mp4" poster="" autoplay>
 </video>

@@ -1,4 +1,4 @@
-# lrEAP演示环境数据库初始化
+# fxEAP演示环境数据库初始化
 
 [返回](../../README.md)
 
@@ -15,7 +15,7 @@
 命令示例：
 
 ```ini
-impdp lreap/xxx@orclpdb directory=ORA_DUMP_DIR dumpfile=lrEAP_xxxx.xx.xx.DMP schemas=lreap logfile=lrEAP_xxxx.xx.xx_imp.log
+impdp lreap/xxx@orclpdb directory=ORA_DUMP_DIR dumpfile=fxEAP_xxxx.xx.xx.DMP schemas=lreap logfile=fxEAP_xxxx.xx.xx_imp.log
 ```
 
 说明：

@@ -1,4 +1,4 @@
-# lrEAP JavaFX环境配置
+# fxEAP JavaFX环境配置
 
 [返回](../../README.md)
 
