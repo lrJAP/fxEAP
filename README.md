@@ -2,7 +2,21 @@
 
 
 
-## 平台应用演示
+## 客户端下载
+
+[fxEAP Web Client](https://gitee.com/lrJAP/fxEAP/raw/main/doc/download/fxEAP_Without_SDK.zip)
+
+需要配置JDK以及JavaFX SDK，参见“配置及运行”章节。注意：本项目需要JDK 11.0.8、JavaFX SDK 17.0.2及以上配置。
+
+## 演示用户信息
+
+| 用户名及密码  | 说明                   |
+| ------------- | ---------------------- |
+| test01/123456 | 测试用户，英文环境     |
+| user02/123456 | 测试用户，中文环境     |
+| user01/123456 | 测试用户，繁体中文环境 |
+
+## 界面演示
 
 基于fxEAP模式化开发的演示系统。
 
